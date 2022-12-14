@@ -3,10 +3,10 @@
 $recepient = "vadim_pirogov@mail.ru";
 $sitename = "Сайт-портфолио";
 
-$name = trim($_POST["contacts-page__name"]);
-$tel = trim($_POST["contacts-page__phone"]);
-$email = trim($_POST["contacts-page__mail"]);
-$text = trim($_POST["contacts-page__text"]);
+$name = trim($_POST["name"]);
+$tel = trim($_POST["tel"]);
+$email = trim($_POST["email"]);
+$text = trim($_POST["text"]);
 $message = "Имя: $name \nТелефон: $tel \nПочта: $email \nТекст: $text";
 
 $pagetitle = "Сообщение с сайта портфолио \"$sitename\"";
