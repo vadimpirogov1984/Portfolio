@@ -49,6 +49,8 @@
             <div class="contacts-page__content">
               <div class="contacts-page__cover">
                 <form
+                  action="https://formspree.io/f/{form_id}"
+                  method="post"
                   class="contacts-page__form"
                   id="contacts-page__form"
                   name="contacts-page__form"
@@ -63,12 +65,12 @@
                     class="contacts-page__name"
                   />
                   <input
-                    id="contacts-page__mail"
-                    name="contacts-page__mail"
+                    id="email"
+                    name="Email"
                     placeholder="mail@my-mail.ru"
                     required=""
                     tabindex="2"
-                    type="text"
+                    type="email"
                     class="contacts-page__mail"
                   />
                   <input
@@ -86,7 +88,7 @@
                     placeholder="Написать сообщение"
                     class="contacts-page__text"
                   ></textarea>
-                  <button id="button-submit" type="submit" class="button">
+                  <button type="submit" class="button">
                     <span>Отправить</span>
                   </button>
                 </form>
