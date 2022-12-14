@@ -22,7 +22,9 @@
                     <a href="about.html" class="menu-header__link">Обо мне</a>
                   </li>
                   <li class="menu-header__item">
-                    <a href="#" class="menu-header__link">Контакты</a>
+                    <a href="contacts.html" class="menu-header__link"
+                      >Контакты</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -50,7 +52,7 @@
               <div class="contacts-page__cover">
                 <form action="https://formspree.io/f/xyyvrrab" method="POST">
                   <input
-                    id="name"
+                    id="contacts-page__name"
                     name="name"
                     placeholder="Имя"
                     required=""
@@ -59,17 +61,17 @@
                     class="contacts-page__name"
                   />
                   <input
-                    id="email"
-                    name="Email"
+                    id="contacts-page__mail"
+                    name="contacts-page__mail"
                     placeholder="mail@my-mail.ru"
                     required=""
                     tabindex="2"
-                    type="email"
+                    type="text"
                     class="contacts-page__mail"
                   />
                   <input
-                    id="tel"
-                    name="tel"
+                    id="contacts-page__phone"
+                    name="contacts-page__phone"
                     placeholder="+7(999)999-99-99"
                     required=""
                     tabindex="2"
@@ -77,12 +79,12 @@
                     class="contacts-page__phone"
                   />
                   <textarea
-                    id="text"
-                    name="text"
+                    id="contacts-page__text"
+                    name="contacts-page__text"
                     placeholder="Написать сообщение"
                     class="contacts-page__text"
                   ></textarea>
-                  <button type="submit" class="button">
+                  <button id="button-submit" type="submit" class="button">
                     <span>Отправить</span>
                   </button>
                 </form>
