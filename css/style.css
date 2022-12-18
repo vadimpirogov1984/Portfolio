@@ -318,14 +318,14 @@ body._lock {
 }
 
 .item-main-slider__content {
-  padding: 40% 0 12% 14%;
+  padding: 50% 0 12% 14%;
   position: relative;
   z-index: 2;
 }
 
 .item-main-slider__title {
   color: #ffffff;
-  margin-bottom: 64px;
+  margin-bottom: 55px;
 }
 
 .item-main-slider__button {
