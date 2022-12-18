@@ -333,11 +333,13 @@ body._lock {
 }
 
 .item-main-slider__bg {
-  position: absolute;
+  padding-bottom: 65%;
+  display: block;
+/*  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 0;*/
 }
 
 .slick-list {
