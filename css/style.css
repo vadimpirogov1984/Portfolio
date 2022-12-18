@@ -318,7 +318,7 @@ body._lock {
 }
 
 .item-main-slider__content {
-  padding: 50% 0 12% 14%;
+ /* padding: 50% 0 12% 14%;*/
   position: relative;
   z-index: 2;
 }
