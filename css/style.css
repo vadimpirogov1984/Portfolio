@@ -319,17 +319,15 @@ body._lock {
 
 .item-main-slider__content {
  /* padding: 50% 0 12% 14%;*/
+  top: 86%;
+  left: 11%;
   position: relative;
   z-index: 2;
 }
 
 .item-main-slider__title {
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 55px;
-}
-
-.item-main-slider__button {
-  background-color: #ffffff;
 }
 
 .item-main-slider__bg {
