@@ -318,10 +318,8 @@ body._lock {
 }
 
 .item-main-slider__content {
- /* padding: 50% 0 12% 14%;*/
-  top: 86%;
-  left: 11%;
-  position: relative;
+  bottom:0;
+  position: absolut;
   z-index: 2;
 }
 
