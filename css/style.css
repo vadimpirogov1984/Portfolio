@@ -675,7 +675,9 @@ body._lock {
   justify-content: center;
   padding-bottom: 65%;
 }
-
+.about__text {
+  line-height: 1.5;
+}
 .contacts-page {
   padding: 75px 15px;
 }
