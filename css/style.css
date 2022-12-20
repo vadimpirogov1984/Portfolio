@@ -307,6 +307,7 @@ body._lock {
 }
 
 .main-slider__item {
+  max-width: 700px;
   position: relative;
   z-index: 2;
 }
