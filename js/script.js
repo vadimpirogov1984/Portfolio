@@ -1,4 +1,4 @@
-
+//Мобильное меню=====================================================
 let menu_btn = document.querySelector(".menu__icon");
 let menu_body = document.querySelector(".menu__body");
 let menu_body__link = document.querySelector(".header__body-link");
@@ -14,8 +14,6 @@ function openBlocks(btn, block, logo) {
 }
 
 openBlocks(menu_btn, menu_body, menu_body__link);
-
-
 
 //Динамический адаптив=================================================
 "use strict";
@@ -176,45 +174,7 @@ for (var i = 0; i < ibg.length; i++) {
 
 ibg();
 
-//Слайдер главного экрана=============================================
-$(document).ready(function () {
-	$(".main-slider__body").slick({
-	  	slidesToShow: 1,
-	  	slidesToScroll: 1,
-	  	arrows: false,
-		dots: true,
-		infinite: true,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		appendDots: $(".main-slider__dotts"),
-	  	responsive: [
-		{
-		  breakpoint: 1024,
-		  settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1,
-
-		  },
-		},
-		{
-		  breakpoint: 800,
-		  settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1,
-		  },
-		},
-		{
-		  breakpoint: 480,
-		  settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-		  },
-		},
-	  ],
-	});
-});
-//Ввозвращение в начало страницы===========================
+//Ввозврат в начало страницы===========================
 const goTopButton = document.querySelector(".go-top");
 goTopButton.addEventListener("click", goTop);
 window.addEventListener("scroll", trackScroll);
@@ -239,6 +199,36 @@ function trackScroll() {
 
 
 
+//Добваление класса активной ссылки страницы=========================
+activeLink();
+
+function activeLink()
+{
+    const links = document.getElementsByTagName("a");
+
+    for(var i=0;i<links.length;i++)
+    {
+        if(links[i].href === window.location.href)
+        {
+            links[i].classList.add('active-link');  
+        }
+    }  
+};
+
+//Слайдер=============================================================
+const swiper = new Swiper('.swiper-container', {
+    slidePerView: 1,
+    loop: true,
+	autoplay: {
+		delay: 5000,
+	  },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
 //Отправка формы обратной связи===============================
 $(document).ready(function() {
 	$("#contacts-page__form").submit(function() {
@@ -261,20 +251,3 @@ $(document).ready(function() {
 	  return false;
 	});
 });
-  
-
-//Добваление класса активной ссылки страницы=========================
-activeLink();
-
-function activeLink()
-{
-    const links = document.getElementsByTagName("a");
-
-    for(var i=0;i<links.length;i++)
-    {
-        if(links[i].href === window.location.href)
-        {
-            links[i].classList.add('active-link');  
-        }
-    }  
-};

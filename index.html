@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     <title>Сайт-портфолио Frontend разработчика</title>
   </head>
   <body>
@@ -52,9 +59,9 @@
       </header>
       <main class="page">
         <section class="main-slider__container _container">
-          <div class="main__slider">
-            <div class="main-slider__body">
-              <div class="main-slider__item item-main-slider">
+          <div class="main__slider swiper-container">
+            <div class="main-slider__body swiper-wrapper">
+              <div class="main-slider__item item-main-slider swiper-slide">
                 <div class="item-main-slider__bg ibg">
                   <img src="img/projects/01.jpg" alt="" />
                 </div>
@@ -68,7 +75,7 @@
                   >
                 </div>
               </div>
-              <div class="main-slider__item item-main-slider">
+              <div class="main-slider__item item-main-slider swiper-slide">
                 <div class="item-main-slider__bg ibg">
                   <img src="img/projects/02.jpg" alt="" />
                 </div>
@@ -81,7 +88,7 @@
                   >
                 </div>
               </div>
-              <div class="main-slider__item item-main-slider">
+              <div class="main-slider__item item-main-slider swiper-slide">
                 <div class="item-main-slider__bg ibg">
                   <img src="img/projects/03.jpg" alt="" />
                 </div>
@@ -96,7 +103,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-slider__dotts dotts"></div>
+            <div class="main-slider__dotts dotts swiper-pagination"></div>
           </div>
         </section>
         <section class="projects">
@@ -246,7 +253,7 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
